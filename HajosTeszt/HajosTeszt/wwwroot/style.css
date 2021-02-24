@@ -1,0 +1,55 @@
+       .keret {
+            background: #48a8f585;
+            border: 3px solid navy;
+            border-bottom-left-radius: 10px 30px;
+            border-bottom-right-radius: 30px 10px;
+            border-top-left-radius: 30px 10px;
+            border-top-right-radius: 10px 30px;
+            padding: 10px;
+            width: 350px;
+        }
+        h1 {
+            font-family: 'Freestyle Script';
+            font-size: 50px;
+            text-align: center;
+            background: #088bf3;
+            border-radius: 20px;
+            padding: 5px;
+            width: 330px;
+            margin: 5px;
+        }
+        h2 {
+            font-family: 'Times New Roman';
+        }
+        p {
+            margin-bottom: 5px;
+        }
+        a {
+            font-weight: bold;
+            color: navy;
+        }
+            a:hover {
+                border: 1px solid navy;
+                padding: 1px;
+            }
+        hr{
+            border-color: deepskyblue;
+        }
+        .kaja {
+            text-indent: 10px;
+            background: #088bf3;
+            border-radius: 20px;
+            padding: 5px;
+        }
+        ul {
+            list-style-type: georgian;
+            margin-top: 0px;
+        }
+        ol {
+            margin-top: 0px;
+        }
+        img {
+            position: fixed;
+            left: 200px;
+            top: 310px;
+        }
