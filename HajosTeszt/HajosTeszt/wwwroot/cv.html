@@ -3,29 +3,92 @@
 <head>
     <meta charset="utf-8" />
     <title>Bemutatkozást</title>
+    <style>
+        .keret {
+            background: #48a8f585;
+            border: 3px solid navy;
+            border-bottom-left-radius: 10px 30px;
+            border-bottom-right-radius: 30px 10px;
+            border-top-left-radius: 30px 10px;
+            border-top-right-radius: 10px 30px;
+            padding: 10px;
+            width: 350px;
+        }
+        h1 {
+            font-family: 'Freestyle Script';
+            font-size: 50px;
+            text-align: center;
+            background: #088bf3;
+            border-radius: 20px;
+            padding: 5px;
+            width: 330px;
+            margin: 5px;
+        }
+        h2 {
+            font-family: 'Times New Roman';
+        }
+        p {
+            margin-bottom: 5px;
+        }
+        a {
+            font-weight: bold;
+            color: navy;
+        }
+            a:hover {
+                border: 1px solid navy;
+                padding: 1px;
+            }
+        hr{
+            border-color: deepskyblue;
+        }
+        .kaja {
+            text-indent: 10px;
+            background: #088bf3;
+            border-radius: 20px;
+            padding: 5px;
+        }
+        ul {
+            list-style-type: georgian;
+            margin-top: 0px;
+        }
+        ol {
+            margin-top: 0px;
+        }
+        img {
+            position: fixed;
+            left: 200px;
+            top: 310px;
+        }
+        
+    </style>
 </head>
 <body>
-    <h1>Matolcsi Miriam</h1>
-    <h2>Magamról</h2>
-    <p>
-        Szeretek kirándulni, zenét hallgatni, sportolni.<br>
-        Nemrég elkezdtem ugrókötelezni, a példaképem <a href="https://www.youtube.com/watch?v=QU1-zo2J7Gk" target="_blank">Tori Boggs</a>.
-    </p>
-    <h2>Kedvenc...</h2>
-    <div>
-        <p>ételeim:</p>
-        <ul>
-            <li>pizza</li>
-            <li>sushi</li>
-            <li>nachos</li>
-        </ul>
-        <p>filmeim:</p>
-        <ol>
-            <li>A lehetetlen</li>
-            <li>Szerelmünk lapjai</li>
-            <li>Az utolsó szamuráj</li>
-        </ol>
+    <div class="keret">
+        <h1>Matolcsi Miriam</h1>
+            <h2>Magamról</h2>
+            <p>
+                Szeretek kirándulni, zenét hallgatni, sportolni.<br>
+                Nemrég elkezdtem ugrókötelezni, a példaképem: <br> <a href="https://www.youtube.com/watch?v=QU1-zo2J7Gk" target="_blank">Tori Boggs</a>.
+            </p>
+        <hr>
+        <h2>Kedvenc...</h2>
+        <div>
+            <div class="kaja">
+            <p>ételeim:</p>
+            <ul>
+                <li>pizza</li>
+                <li>sushi</li>
+                <li>nachos</li>
+            </ul>
+            </div>
+            <p>filmeim:</p>
+            <ol>
+                <li>A lehetetlen</li>
+                <li>Szerelmünk lapjai</li>
+                <li>Az utolsó szamuráj</li>
+            </ol>
+        </div>
+        <img src="/pizza.png" alt="ez egy pizza">
     </div>
-    <img src="https://szoft1.comeback.hu/hajo/penguin.jpg" alt="ez egy pingvin">
 </body>
 </html>
