@@ -1,0 +1,135 @@
+﻿* {
+    box-sizing: border-box;
+}
+
+body {
+    font-weight: bold;
+    text-align: center;
+}
+
+#article,
+#aside,
+#footer,
+#header,
+#nav {
+    padding: 20px;
+}
+
+#header {
+    background: #088bf3;
+    border-radius: 20px 20px 0 0;
+    padding: 5px;
+    margin: 5px;
+}
+
+#article {
+    border: 3px solid navy;
+    background: #48a8f585;
+    border-bottom-left-radius: 10px 30px;
+    border-bottom-right-radius: 30px 10px;
+    border-top-left-radius: 30px 10px;
+    border-top-right-radius: 10px 30px;
+    padding: 10px;
+    margin: 5px;
+}
+
+#aside {
+    border-radius: 20px;
+    background: #088bf3;
+    border-radius: 20px;
+    margin: 5px;
+    padding: 5px;
+}
+
+#footer {
+    background: #088bf3;
+    font-weight: bold;
+    font-size: 12px;
+    border-radius: 0 0 20px 20px;
+}
+
+#nav {
+    display: flex;
+    width: 99%;
+    background: deepskyblue;
+    margin: auto;
+    border-bottom-left-radius: 32px;
+    border-bottom-right-radius: 32px;
+}
+
+    #nav a {
+        /* ugyanaz, mint flex-grow:1; flex-shrink:1;flex-basis:auto;*/
+        flex: 1 1 auto;
+        text-decoration: none;
+        color: black;
+    }
+#current {
+    text-shadow: 0 0 20px navy;
+}
+
+
+@media screen and (min-width: 800px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        max-width: 1000px;
+        margin: auto;
+    }
+
+    #main {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    #nav,
+    #header {
+        order: -1;
+    }
+
+    #article {
+        flex: 1 1 65%;
+    }
+
+    #aside {
+        flex: 1 1 35%;
+    }
+}
+
+h1 {
+    font-family: "Freestyle Script";
+    font-size: 50px;
+}
+
+h2 {
+    font-family: "Times New Roman";
+    text-align: center;
+}
+
+p {
+    margin-bottom: 5px;
+}
+
+a {
+    font-weight: bold;
+    color: navy;
+    padding: 5px
+}
+
+    a:hover {
+        text-shadow: 0 0 20px navy;
+    }
+
+table {
+    width: 100%;
+    margin: auto;
+}
+
+ul {
+    list-style-type: georgian;
+    margin-top: 0px;
+}
+
+
+img {
+    margin: auto;
+}
