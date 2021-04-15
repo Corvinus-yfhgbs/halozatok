@@ -1,0 +1,171 @@
+﻿<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Matolcsi Miriam">
+    <link rel="icon" href="kepek/gomba.png" type="image/x-icon">
+    <meta name="description" content="Ez egy fiktív, gombákkal foglalkozó oldal">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
+    <script src="gombak.js"></script>
+    <title>Gombakuckó</title>
+    <link rel="stylesheet" type="text/css" href="Gombak.css">
+    <style>
+        #mérgező {
+            border: 3px double #ad9689 !important;
+        }
+
+        .fejléc {
+            font-weight: bold;
+            height: 50px;
+        }
+
+        .alsószegély {
+            border-bottom: 3px double #ad9689;
+        }
+
+        #mérgező table {
+            border: none;
+        }
+
+        #mérgező td {
+            border-bottom: none;
+            text-align: center;
+        }
+
+        .border {
+            border: 3px double #ad9689;
+        }
+
+        #kép {
+            text-align: center;
+            float: right;
+        }
+
+        #mérgezőkép {
+            text-align: center;
+        }
+
+            #mérgezőkép img {
+                height: 130px;
+                border: 3px double #ad9689;
+            }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="headerrow">
+            <div id="headerpic" class="col-3 col-t-3"><img src="kepek/gomba.png"></div>
+            <div id="title" class="col-5 col-t-5"><h1>Gombakuckó</h1></div>
+            <div id="szoveg" class="col-3 col-t-7">
+                Minden gomba ehető... <br> de némelyik csak egyszer.
+            </div>
+
+        </div>
+    </header>
+
+    <div class="middle">
+        <div id="menu">
+            <div class="row">
+
+                <nav id="menu">
+                    <ul>
+                        <li class="col-l-1 col-2 col-t-3"><a href="fooldal.html">Főoldal</a></li>
+                        <li class="col-l-1 col-2 col-t-3"><a class="active" href="#">Gombák</a></li>
+                        <li class="col-l-1 col-2 col-t-3"><a href="recept.html">Receptek</a></li>
+                        <li class="col-l-1 col-2 col-t-3"><a href="kapcsolat.html">Kapcsolat</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-4 col-t-12">
+                <aside>
+                    <h2 class="cikkcim">Olvasóink fotózták</h2>
+                    <p class="infoszoveg">Küldd el nekünk az általad készített képeket a Kapcsolat menüpont alatt</p>
+                </aside>
+            </div>
+            <div class="col-8 col-t-12">
+                <article id="article">
+                    <h2 class="cikkcim">GombAdatbázis</h2>
+                    <p class="infoszoveg">
+                        Ismerkedj meg a gombafajtákkal!
+                        <br />
+                        Válassz egy hónapot, majd szemezgess a választott hónapban szedhető gombákból!
+                    </p>
+                    <div class="row">
+                        <img id="kép" class="col-6 col-t-6" src="" />
+                        <label>
+                            Hónap:
+                            <select id="selector" onchange="lekerdezes()">
+                                <option value="1">Január</option>
+                                <option value="2">Február</option>
+                                <option value="3">Március</option>
+                                <option value="4">Április</option>
+                                <option value="5">Május</option>
+                                <option value="6">Június</option>
+                                <option value="7">Július</option>
+                                <option value="8">Augusztus</option>
+                                <option value="9">Szeptember</option>
+                                <option value="10">Október</option>
+                                <option value="11">November</option>
+                                <option value="12">December</option>
+                            </select>
+                        </label>
+                        <br />
+                        <br />
+                        <div id="gombák">
+                        </div>
+                    </div>
+
+                    <table id="gombadatok">
+                        <tr>
+                            <td>
+                                Mikortól
+                            </td>
+                            <td>
+                                Meddig
+                            </td>
+                            <td>
+                                Lelőhely
+                            </td>
+                            <td>
+                                Védettség
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="Mikortól">
+                            </td>
+                            <td id="Meddig">
+                            </td>
+                            <td id="Lelőhely">
+                            </td>
+                            <td id="Védettség">
+                            </td>
+                        </tr>
+                    </table>
+
+                    <h3 class="cikkcim">Hasonló mérgező gombák</h3>
+                    <div id="mérgező">
+
+                    </div>
+
+
+                </article>
+            </div>
+
+
+
+
+        </div>
+    </div>
+
+<footer>
+    <p>© 2021. Készítette: Matolcsi Miriam</p>
+</footer>
+
+</body>
+</html>

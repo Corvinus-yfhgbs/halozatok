@@ -1,0 +1,450 @@
+﻿[
+  {
+    "azon": "1",
+    "név": "Acélszürke galambgomba",
+    "kezd": "6",
+    "vége": "9",
+    "lelőhely": "Hegyvidék",
+    "védett": "Nem védett"
+  },
+  {
+    "azon": "2",
+    "név": "Akácpereszke",
+    "kezd": "3",
+    "vége": "10",
+    "lelőhely": "Rét",
+    "védett": "Nem védett"
+  },
+  {
+    "azon": "3",
+    "név": "Acélkékes galambgomba",
+    "kezd": "7",
+    "vége": "10",
+    "lelőhely": "Lomberdő",
+    "védett": "Nem védett"
+  },
+  {
+    "azon": "4",
+    "név": "Ánizsszagú fagomba",
+    "kezd": "8",
+    "vége": "11",
+    "lelőhely": "Fák törzsén",
+    "védett": "Nem védett"
+  },
+  {
+    "azon": "5",
+    "név": "Ánizsszagú tölcsérgomba",
+    "kezd": "7",
+    "vége": "11",
+    "lelőhely": "Fenyőerdő",
+    "védett": "Nem védett"
+  },
+  {
+    "azon": "6",
+    "név": "Apró nedűgomba",
+    "kezd": "6",
+    "vége": "10",
+    "lelőhely": "Lomberdő",
+    "védett": "Nem védett"
+  },
+  {
+    "azon": "7",
+    "név": "Réti pikkelyespereszke",
+    "kezd": "5",
+    "vége": "10",
+    "lelőhely": "Rét",
+    "védett": "5 000tt"
+  },
+  {
+    "azon": "8",
+    "név": "Aranyos galambgomba",
+    "kezd": "6",
+    "vége": "10",
+    "lelőhely": "Lomberdő",
+    "védett": "Nem védett"
+  },
+  {
+    "azon": "9",
+    "név": "Aranysárga lemezestinóru",
+    "kezd": "5",
+    "vége": "10",
+    "lelőhely": "Lomberdő",
+    "védett": "5 000tt"
+  },
+  {
+    "azon": "10",
+    "név": "Aranytinóru",
+    "kezd": "5",
+    "vége": "11",
+    "lelőhely": "Lomberdő",
+    "védett": "Nem védett"
+  },
+  {
+    "azon": "11",
+    "név": "Árvégű fülőke",
+    "kezd": "5",
+    "vége": "10",
+    "lelőhely": "Lomberdő",
+    "védett": "Nem védett"
+  },
+  {
+    "azon": "12",
+    "név": "Azúrkék galambgomba",
+    "kezd": "4",
+    "vége": "10",
+    "lelőhely": "Hegyvidék",
+    "védett": "Nem védett"
+  },
+  {
+    "azon": "13",
+    "név": "Baracksárga galambgomba",
+    "kezd": "7",
+    "vége": "10",
+    "lelőhely": "Lomberdő",
+    "védett": "Nem védett"
+  },
+  {
+    "azon": "14",
+    "név": "Baracksárga tinóru",
+    "kezd": "6",
+    "vége": "9",
+    "lelőhely": "Alföld",
+    "védett": "Nem védett"
+  },
+  {
+    "azon": "15",
+    "név": "Barna csengettyűgomba",
+    "kezd": "3",
+    "vége": "11",
+    "lelőhely": "Fák törzsén",
+    "védett": "Nem védett"
+  },
+  {
+    "azon": "16",
+    "név": "Barna csészegomba",
+    "kezd": "6",
+    "vége": "11",
+    "lelőhely": "Lomberdő",
+    "védett": "Nem védett"
+  },
+  {
+    "azon": "17",
+    "név": "Barna érdestinóru",
+    "kezd": "6",
+    "vége": "10",
+    "lelőhely": "Lomberdő",
+    "védett": "Nem védett"
+  },
+  {
+    "azon": "18",
+    "név": "Barna gyűrűstinóru",
+    "kezd": "5",
+    "vége": "11",
+    "lelőhely": "Fenyőerdő",
+    "védett": "Nem védett"
+  },
+  {
+    "azon": "19",
+    "név": "Barna nyálkásgomba",
+    "kezd": "8",
+    "vége": "11",
+    "lelőhely": "Fenyőerdő",
+    "védett": "Nem védett"
+  },
+  {
+    "azon": "20",
+    "név": "Barna porhanyósgomba",
+    "kezd": "4",
+    "vége": "12",
+    "lelőhely": "Lomberdő",
+    "védett": "Nem védett"
+  },
+  {
+    "azon": "21",
+    "név": "Barna tinóru",
+    "kezd": "5",
+    "vége": "11",
+    "lelőhely": "Fenyőerdő",
+    "védett": "Nem védett"
+  },
+  {
+    "azon": "22",
+    "név": "Barnakorongos csigagomba",
+    "kezd": "5",
+    "vége": "10",
+    "lelőhely": "Fenyőerdő",
+    "védett": "Nem védett"
+  },
+  {
+    "azon": "23",
+    "név": "Barnásvörös galambgomba",
+    "kezd": "6",
+    "vége": "11",
+    "lelőhely": "Hegyvidék",
+    "védett": "Nem védett"
+  },
+  {
+    "azon": "24",
+    "név": "Barnulóhúsú galambgomba",
+    "kezd": "6",
+    "vége": "11",
+    "lelőhely": "Hegyvidék",
+    "védett": "Nem védett"
+  },
+  {
+    "azon": "25",
+    "név": "Begöngyöltszélű cölöpgomba",
+    "kezd": "6",
+    "vége": "11",
+    "lelőhely": "Lomberdő",
+    "védett": "Nem védett"
+  },
+  {
+    "azon": "26",
+    "név": "Bimbós pöfeteg",
+    "kezd": "6",
+    "vége": "11",
+    "lelőhely": "Lomberdő",
+    "védett": "Nem védett"
+  },
+  {
+    "azon": "27",
+    "név": "Császárgalóca",
+    "kezd": "7",
+    "vége": "10",
+    "lelőhely": "Lomberdő",
+    "védett": "5 000tt"
+  },
+  {
+    "azon": "28",
+    "név": "Sötétedőhúsú rókagomba",
+    "kezd": "8",
+    "vége": "10",
+    "lelőhely": "Lomberdő",
+    "védett": "5000 tt"
+  },
+  {
+    "azon": "29",
+    "név": "Bronzos vargánya",
+    "kezd": "6",
+    "vége": "11",
+    "lelőhely": "Lomberdő",
+    "védett": "Nem védett"
+  },
+  {
+    "azon": "30",
+    "név": "Óriás pókhálósgomba",
+    "kezd": "8",
+    "vége": "10",
+    "lelőhely": "Hegyvidék",
+    "védett": "5 000tt"
+  },
+  {
+    "azon": "31",
+    "név": "Cafrangos galóca",
+    "kezd": "6",
+    "vége": "9",
+    "lelőhely": "Lomberdő",
+    "védett": "Nem védett"
+  },
+  {
+    "azon": "32",
+    "név": "Céklatinóru",
+    "kezd": "6",
+    "vége": "10",
+    "lelőhely": "Lomberdő",
+    "védett": "Nem védett"
+  },
+  {
+    "azon": "33",
+    "név": "Cseh kucsmagomba",
+    "kezd": "3",
+    "vége": "5",
+    "lelőhely": "Lomberdő",
+    "védett": "Nem védett"
+  },
+  {
+    "azon": "34",
+    "név": "Csoportos álpereszke",
+    "kezd": "6",
+    "vége": "11",
+    "lelőhely": "Lomberdő",
+    "védett": "Nem védett"
+  },
+  {
+    "azon": "35",
+    "név": "Csoportos tuskógomba",
+    "kezd": "8",
+    "vége": "11",
+    "lelőhely": "Lomberdő",
+    "védett": "Nem védett"
+  },
+  {
+    "azon": "36",
+    "név": "Déli tőkegomba",
+    "kezd": "4",
+    "vége": "11",
+    "lelőhely": "Lomberdő",
+    "védett": "Nem védett"
+  },
+  {
+    "azon": "37",
+    "név": "Elefántcsont csigagomba",
+    "kezd": "6",
+    "vége": "11",
+    "lelőhely": "Lomberdő",
+    "védett": "Nem védett"
+  },
+  {
+    "azon": "38",
+    "név": "Erdei csiperke",
+    "kezd": "6",
+    "vége": "10",
+    "lelőhely": "Lomberdő",
+    "védett": "Nem védett"
+  },
+  {
+    "azon": "39",
+    "név": "Gyapjas tintagomba",
+    "kezd": "5",
+    "vége": "10",
+    "lelőhely": "Rét",
+    "védett": "Nem védett"
+  },
+  {
+    "azon": "40",
+    "név": "Ízletes csiperke",
+    "kezd": "5",
+    "vége": "11",
+    "lelőhely": "Kertekben, parkokban",
+    "védett": "Nem védett"
+  },
+  {
+    "azon": "41",
+    "név": "Ízletes kucsmagomba",
+    "kezd": "3",
+    "vége": "5",
+    "lelőhely": "Trágyadombokon",
+    "védett": "Nem védett"
+  },
+  {
+    "azon": "42",
+    "név": "Ízletes tőkegomba",
+    "kezd": "4",
+    "vége": "11",
+    "lelőhely": "Lomberdő",
+    "védett": "Nem védett"
+  },
+  {
+    "azon": "43",
+    "név": "Karcsú csiperke",
+    "kezd": "7",
+    "vége": "10",
+    "lelőhely": "Lomberdő",
+    "védett": "Nem védett"
+  },
+  {
+    "azon": "44",
+    "név": "Kékhátú galambgomba",
+    "kezd": "6",
+    "vége": "11",
+    "lelőhely": "Lomberdő",
+    "védett": "Nem védett"
+  },
+  {
+    "azon": "45",
+    "név": "Kenyérgomba",
+    "kezd": "6",
+    "vége": "11",
+    "lelőhely": "Lomberdő",
+    "védett": "Nem védett"
+  },
+  {
+    "azon": "46",
+    "név": "Királyvargánya",
+    "kezd": "6",
+    "vége": "10",
+    "lelőhely": "Lomberdő",
+    "védett": "Nem védett"
+  },
+  {
+    "azon": "47",
+    "név": "Májusi pereszke",
+    "kezd": "4",
+    "vége": "6",
+    "lelőhely": "Rét",
+    "védett": "Nem védett"
+  },
+  {
+    "azon": "48",
+    "név": "Mezei szegfűgomba",
+    "kezd": "5",
+    "vége": "11",
+    "lelőhely": "Rét",
+    "védett": "Nem védett"
+  },
+  {
+    "azon": "49",
+    "név": "Nagy őzlábgomba",
+    "kezd": "8",
+    "vége": "11",
+    "lelőhely": "Lomberdő",
+    "védett": "Nem védett"
+  },
+  {
+    "azon": "50",
+    "név": "Narancsvörös csészegomba",
+    "kezd": "6",
+    "vége": "10",
+    "lelőhely": "Lomberdő",
+    "védett": "Nem védett"
+  },
+  {
+    "azon": "51",
+    "név": "Nyári vargánya",
+    "kezd": "5",
+    "vége": "10",
+    "lelőhely": "Hegyvidék",
+    "védett": "Nem védett"
+  },
+  {
+    "azon": "52",
+    "név": "Sárga rókagomba",
+    "kezd": "6",
+    "vége": "9",
+    "lelőhely": "Lomberdő",
+    "védett": "Nem védett"
+  },
+  {
+    "azon": "53",
+    "név": "Szemcsésnyelű fenyőtinóru",
+    "kezd": "5",
+    "vége": "11",
+    "lelőhely": "Fenyőerdő",
+    "védett": "Nem védett"
+  },
+  {
+    "azon": "54",
+    "név": "Szürke tölcsérgomba",
+    "kezd": "9",
+    "vége": "11",
+    "lelőhely": "Lomberdő",
+    "védett": "Nem védett"
+  },
+  {
+    "azon": "55",
+    "név": "Tarlógomba",
+    "kezd": "7",
+    "vége": "10",
+    "lelőhely": "Fenyőerdő",
+    "védett": "Nem védett"
+  },
+  {
+    "azon": "56",
+    "név": "Tövisalja gomba",
+    "kezd": "4",
+    "vége": "5",
+    "lelőhely": "Rózsafélék közelében",
+    "védett": "Nem védett"
+  }
+]

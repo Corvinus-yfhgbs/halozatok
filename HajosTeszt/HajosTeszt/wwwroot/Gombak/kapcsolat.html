@@ -1,0 +1,177 @@
+﻿<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Matolcsi Miriam">
+    <link rel="icon" href="kepek/gomba.png" type="image/x-icon">
+    <meta name="description" content="Ez egy fiktív, gombákkal foglalkozó oldal">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Raleway:wght@100&display=swap" rel="stylesheet">
+    <title>Gombakuckó</title>
+    <link rel="stylesheet" type="text/css" href="Gombak.css">
+    <script src="kapcsolat.js"></script>
+    <style>
+        td {
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="headerrow">
+            <div id="headerpic" class="col-3 col-t-3"><img src="kepek/gomba.png"></div>
+            <div id="title" class="col-5 col-t-5"><h1>Gombakuckó</h1></div>
+            <div id="szoveg" class="col-3 col-t-7">
+                Minden gomba ehető... <br> de némelyik csak egyszer.
+            </div>
+
+        </div>
+    </header>
+
+    <div class="middle">
+        <div id="menu">
+            <div class="row">
+
+                <nav id="menu">
+                    <ul>
+                        <li class="col-l-1 col-2 col-t-3"><a href="fooldal.html">Főoldal</a></li>
+                        <li class="col-l-1 col-2 col-t-3"><a href="gombak.html">Gombák</a></li>
+                        <li class="col-l-1 col-2 col-t-3"><a href="recept.html">Receptek</a></li>
+                        <li class="col-l-1 col-2 col-t-3"><a class="active" href="#">Kapcsolat</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-4 col-t-12">
+                <aside>
+                    <form action="http://szamtud.uni-corvinus.hu/~blang/receive.php" method="post">
+                        <h2 class="cikkcim">Hírlevél</h2>
+                        <p class="infoszoveg">Iratkozz fel a hírlevelünkre, hogy ne maradj le a legfrissebbekről!</p>
+                        <table>
+                            <tr>
+                                <td>
+                                    <label>
+                                        Név:
+                                        <input type="text" name="nev" size="15" />
+                                    </label>
+                                </td>
+                            <tr>
+                                <td>
+                                    <label>
+                                        Email:
+                                        <input type="email" name="email" size="15" />
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" class="col-12 col-t-12">
+                                    <label>
+                                        Miről szeretne értesítést kapni?
+                                    </label>
+                                    <br />
+                                    <label>
+                                        <input type="checkbox" name="tema" value="cikkek" id="cikkek" />
+                                        Legújabb cikkek
+                                    </label>
+                                    <br />
+                                    <label>
+                                        <input type="checkbox" name="tema" value="hírek" id="hirek" />
+                                        Hírek
+                                    </label>
+                                    <br />
+                                    <label>
+                                        <input type="checkbox" name="tema" value="tájékoztatók" id="tajok" />
+                                        Tájékoztatók
+                                    </label>
+                                    <br />
+                                    <label>
+                                        <input type="checkbox" name="tema" value="receptek" id="receptek" />
+                                        Új receptek
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" class="col-12 col-t-12">
+                                    <label>
+                                        <input type="checkbox" name="tema" value="receptek" id="receptek" />
+                                        Elfogadom, hogy a Gombakuckó leveleket küldjön a részemre.
+                                    </label>
+                                </td>
+                            </tr>
+                        </table>
+                        <br />
+                        <input type="submit" name="feliratkozas" value="Feliratkozás" />
+                    </form>
+                </aside>
+            </div>
+            <div class="col-8 col-t-12">
+                <article id="article">
+                    <h2 class="cikkcim">Kapcsolatfelvétel</h2>
+                    <p class="infoszoveg">Ha kérdésed vagy észrevételed van, keress minket bátran!</p>
+                    <form action="http://szamtud.uni-corvinus.hu/~blang/receive.php" method="post">
+                    <table>
+                        <tr id="adatok">
+                            <td>
+                                <label>
+                                    Név:
+                                    <input type="text" name="nev" size="15" />
+                                </label>
+                            </td>
+                            <td>
+                                <label>
+                                    Email:
+                                    <input type="email" name="email" size="15" />
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label id="lista">
+                                    Milyen témában keresel minket?
+                                    <select id="selector">
+                                        <option value="">Kérlek válassz...</option>
+                                        <option value="kérdés">Kérdés</option>
+                                        <option value="hiba" id="hiba">Hibajelzés</option>
+                                        <option value="egyéb">Egyéb</option>
+                                    </select>
+                                </label>
+                            </td>
+                            <td id="kapcsinfo"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <textarea name="szöveg" rows="6">Írd le a gondolataidat...</textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <label>Kérlek értékeld a weboldalunkat:</label>
+                                <br />
+                                <span>1 </span><input type="range" name="értékelés" min="1" max="5" value="5" /><span> 5</span>
+                            </td>
+                        </tr>
+                    </table>
+                    <br />
+                    <div id="kuldes">
+                        <input type="submit" name="kuld" value="Küldés" />
+                    </div>
+                 </form>
+                </article>
+            </div>
+
+
+
+
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2021. Készítette: Matolcsi Miriam</p>
+    </footer>
+
+</body>
+</html>

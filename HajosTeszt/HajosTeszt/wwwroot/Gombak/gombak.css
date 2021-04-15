@@ -1,0 +1,352 @@
+/*====ALTALANOS====*/
+* {
+    box-sizing: border-box;
+}
+
+html {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+background-color: #F5E9DD;
+padding: 0px;
+margin: 0px;
+}
+
+/*====MENUK====*/
+
+#menu{
+    min-width: 300px;
+}
+
+#menu ul {
+    list-style-type: none;
+    margin: auto;
+    padding: 0;
+}
+
+#menu li {
+    list-style-type: none;
+    color: white;
+    width: 90px;
+}
+
+#menu li a {
+    display: block;
+    padding: 15px;
+    padding-left: 10px;
+    text-decoration: none;
+    color: white;
+    background-image: url(kepek/menu.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    font-size: 12px;
+}
+
+ #menu .active {
+      padding: 18px;
+      padding-left: 10px;
+      padding-top: 12px;
+      background-image: url(kepek/menu2.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+
+#menu li a:hover {
+    padding: 18px;
+    padding-left: 10px;
+    padding-top: 12px;
+    background-image: url(kepek/menu2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/*====TAGEK====*/
+
+header {
+    padding: 2px;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0;
+    text-align: center;
+    font-size: 1.5em;
+    color: rgb(255, 255, 255);
+}
+
+
+article {
+    padding: 10px;
+    color: black;
+    text-align: justify;
+    min-width: 300px;
+    background-color: #f5efea;
+    margin-top: 50px;
+
+}
+
+aside {
+    padding: 15px;
+    width: 80%;
+    min-width: 210px;
+    color: black;
+    text-align: center;
+    font-size: 0.84em;
+    background: #f5efea;
+    margin: auto;
+    margin-top: 50px;
+}
+
+table {
+    border-bottom: 3px double #ad9689;
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+#gombadatok td {
+    border: 3px double #ad9689;
+    text-align: center;
+}
+
+#adatok td{
+    text-align: center;
+    height: 50px;
+}
+
+td {
+    padding: 5px;
+}
+
+textarea{
+    width: 80%;
+}
+
+footer {
+    color: #795548;
+    text-align: center;
+    box-shadow: 0px 0px 3px #795548;
+    background-color: #f5efea;
+    font-size: 12px;
+    padding: 15px;
+}
+
+/*====ID====*/
+
+
+#title {
+    text-align: center;
+    text-shadow: 2px 0px 8px #00000091;
+    margin-top: -200px;
+}
+
+#headerpic {
+    height: 300px;
+    text-align: center;
+}
+
+#szoveg {
+    font-size: 24px;
+    font-family: 'Marck Script', cursive;
+    font-weight: bold;
+    text-align: center;
+    color: #ad9689;
+    padding-top: 0;
+    padding-right: 40px;
+}
+
+#kuldes {
+    text-align: center;
+}
+
+
+#otodik.doboz {
+    margin: auto;
+}
+
+/*====OSZTALYOK====*/
+
+.headerrow {
+    height: 300px;
+    margin: auto;
+    margin-top: 30px;
+    box-shadow: 0px 0px 3px #795548;
+    background-color: #f5efea;
+}
+
+.middle {
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+
+.posts{
+    background-color: #f5efea;
+}
+
+
+h2.cikkcim {
+    display: table;
+    font-size: 2em;
+    font-family: 'Marck Script', cursive;
+    color: #ad9689;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+h3.cikkcim {
+    display: table;
+    text-align: left;
+    font-size: 1.5em;
+    font-family: 'Marck Script', cursive;
+    color: #ad9689;
+    margin-bottom: 10px;
+}
+
+
+.tartalom {
+    padding: 3px;
+    text-indent: 1.1em;
+    background-image: url(kepek/halom.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.doboz {
+    background: #f5e9dde0;
+    box-shadow: 0px 0px 3px #c7b2a6;
+    border-radius: 5px 20px 5px 20px;
+    margin: 20px;
+    max-width: 374px;
+    padding: 15px;
+}
+
+.doboz:nth-child(even) {
+    float: right;
+}
+
+
+.dobozcim {
+    font-weight: bold;
+    text-align: center;
+    margin: 2px;
+}
+
+.infoszoveg {
+    color: #ad9689;
+    border-bottom: 3px double #ad9689;
+    padding-bottom: 20px;
+    margin-bottom: 2px;
+    text-align: center;
+}
+
+ .fajta {
+    color: black;
+    font-size: 20px;
+    padding: 5px;
+    border-bottom: 3px double #ad9689;
+}
+
+.fajta:hover {
+        background: #f5e9dd;
+}
+
+.recept {
+    padding: 15px;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+.recept:hover {
+    box-shadow: 0px 0px 5px #c7b2a6;
+}
+
+.recept a {
+    text-decoration: none;
+    color: black;
+}
+
+.recept img {
+    border: 3px double #ad9689;
+    padding: 6px;
+    margin-right: 30px;
+}
+
+.recept:nth-child(even) {
+    background: #f5e9dd;
+}
+
+.recept:nth-child(even) img {
+    float: right;
+    margin-right: 0;
+}
+
+.leiras {
+    margin-left: 30px;
+}
+
+
+/*====RESZPONZIVITAS====*/
+
+[class*="col-"] {
+    float: left;
+    padding: 10px;
+    width: 100%;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+@media only screen and (min-width: 500px) {
+    /* tablet */
+    .middle{width: 100%;}
+    #title {padding-top: 90px; margin: 0; text-align: left;}
+    #menu ul {margin: 0;}
+    #menu li a:hover, #menu .active, #menu li a, #menu li {
+        padding: 22px;
+        padding-left: 15px;
+        font-size: 16px;
+        width: initial;
+    }
+    #szoveg {margin-left: 30px;}
+    .col-t-1 {width: 8.33%;}
+    .col-t-2 {width: 16.66%;}
+    .col-t-3 {width: 25%;}
+    .col-t-4 {width: 33.33%;}
+    .col-t-5 {width: 41.66%;}
+    .col-t-6 {width: 50%;}
+    .col-t-7 {width: 58.33%;}
+    .col-t-8 {width: 66.66%;}
+    .col-t-9 {width: 75%;}
+    .col-t-10 {width: 83.33%;}
+    .col-t-11 {width: 91.66%;}
+    .col-t-12 {width: 100%;}
+}
+@media only screen and (min-width: 800px) {
+    /* számítógép */
+    header{height: 285px;}
+    #headerpic{text-align:right;}
+    .middle{width: 80%;}
+    #szoveg{padding-top: 120px}
+    #menu{max-width: 800px;}
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+
+@media only screen and (min-width: 1600px) {
+    /* számítógép2 */
+    #menu{max-width: none;}
+}

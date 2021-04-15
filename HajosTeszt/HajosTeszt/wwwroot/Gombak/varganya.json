@@ -1,0 +1,26 @@
+[
+  {
+    "nev": "Varg\u00e1nyagomba-leves",
+    "elkeszites": "10 perc",
+    "fozes": "20 perc",
+    "kaloria": "223 kcl / adag",
+    "kep": "/gombak/receptek/varganya/1.kep.jpeg",
+    "link": "https://www.nosalty.hu/recept/varganya-gombaleves"
+  },
+  {
+    "nev": "Varg\u00e1ny\u00e1s-sonk\u00e1s t\u00e9szta",
+    "elkeszites": "10 perc",
+    "fozes": "15 perc",
+    "kaloria": "834 kcl / adag",
+    "kep": "/gombak/receptek/varganya/2.kep.jpeg",
+    "link": "https://www.nosalty.hu/recept/varganyas-sonkas-teszta"
+  },
+  {
+    "nev": "Friss gombasal\u00e1ta",
+    "elkeszites": "15 perc",
+    "fozes": "15 perc",
+    "kaloria": "164 kcl / adag",
+    "kep": "/gombak/receptek/varganya/3.kep.jpeg",
+    "link": "https://www.nosalty.hu/recept/friss-gombasalata"
+  }
+]

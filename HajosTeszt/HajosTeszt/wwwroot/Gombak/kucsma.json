@@ -1,0 +1,26 @@
+[
+  {
+    "nev": "Kucsmagomba sz\u00f3sz",
+    "elkeszites": "15 perc",
+    "fozes": "15 perc",
+    "kaloria": "272 kcl / adag",
+    "kep": "/gombak/receptek/kucsma/1.kep.jpeg",
+    "link": "https://www.nosalty.hu/recept/kucsmagomba-szosz"
+  },
+  {
+    "nev": "Kucsmagomb\u00e1s-medvehagym\u00e1s pite",
+    "elkeszites": "10 perc",
+    "fozes": "55 perc",
+    "kaloria": "602 kcl / adag",
+    "kep": "/gombak/receptek/kucsma/2.kep.jpeg",
+    "link": "https://www.nosalty.hu/recept/kucsmagombas-medvehagymas-pite"
+  },
+  {
+    "nev": "Kucsmagomb\u00e1s kr\u00e9mleves",
+    "elkeszites": "15 perc",
+    "fozes": "25 perc",
+    "kaloria": "181 kcl / adag",
+    "kep": "/gombak/receptek/kucsma/3.kep.jpeg",
+    "link": "https://www.nosalty.hu/recept/kucsmagombas-kremleves-mikibacsitol"
+  }
+]
