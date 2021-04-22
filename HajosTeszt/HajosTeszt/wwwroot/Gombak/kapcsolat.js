@@ -2,8 +2,8 @@
     let info = document.getElementById('kapcsinfo');
     info.innerHTML = '';
 
-    if (document.getElementById("hibafájl")) {
-        let fájl = document.getElementById("hibafájl");
+    if (document.getElementById("kepfajl")) {
+        let fájl = document.getElementById("kepfajl");
         fájl.innerHTML = '';
     }
 
@@ -16,18 +16,13 @@ function válasz() {
     let figyelem = document.createElement("h2");
     let szöveg = document.createElement("p");
 
-    if (value == "hiba") {
-        figyelem.innerText = "Figyelem!";
-        figyelem.classList.add("cikkcim");
-        hova.appendChild(figyelem);
-        szöveg.innerText = "Kérlek, pontosan fogalmazz, hogy megkönnyítsd a munkánkat, és minél hamarabb javíthassuk a hibát. Ha a megértést segíti, kérlek, tölts fel egy fájlt.";
-        hova.appendChild(szöveg);
+    if (value == "kep") {
 
         hova = document.getElementById("lista");
         let div = document.createElement("div");
-        div.id = "hibafájl"
+        div.id = "kepfajl"
         hova.appendChild(div);
-        hova = document.getElementById("hibafájl");
+        hova = document.getElementById("kepfajl");
 
         let sor = document.createElement("br");
         hova.appendChild(sor);
@@ -35,7 +30,7 @@ function válasz() {
         hova.appendChild(sor);
 
         let label = document.createElement("label");
-        label.innerText = "Válassz egy fájlt:";
+        label.innerText = "Válassz egy képet:";
         hova.appendChild(label);
 
         sor = document.createElement("br");

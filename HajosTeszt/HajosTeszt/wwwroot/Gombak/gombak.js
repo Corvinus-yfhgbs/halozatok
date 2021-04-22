@@ -58,7 +58,10 @@ function adatokMegjelenítés() {
 
     adat = document.getElementById('kép');
     adat.src = "kepek/Ehető/" + gombák[(azon - 1)].azon + ".jpg";
+    adat.alt = gombák[(azon - 1)].név;
     adat.classList.add('border')
+
+    document.getElementById('gombanév').innerHTML = gombák[(azon - 1)].név;
 
     fetch('/gombak/hasonlo_gombak.json')
         .then(r => r.json())
@@ -98,6 +101,7 @@ function mérgezőMegjelenítés(data, méreg) {
     kép.src = "kepek/Mérgező/" + azon + ".jpg";
     kép.classList.add('col-4');
     kép.classList.add('col-t-4');
+    kép.alt = mérgezők[méreg - 1].név;
     fősor.appendChild(kép);
 
     table = document.createElement('table');

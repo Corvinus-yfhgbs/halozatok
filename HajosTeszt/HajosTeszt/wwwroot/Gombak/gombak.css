@@ -62,6 +62,15 @@ margin: 0px;
     background-size: contain;
 }
 
+a {
+    color: #ad9689;
+}
+
+a:hover {
+    text-shadow: 0px 0px 0.5px #0000007a;
+}
+
+
 /*====TAGEK====*/
 
 header {
@@ -146,8 +155,8 @@ footer {
 }
 
 #szoveg {
-    font-size: 24px;
-    font-family: 'Marck Script', cursive;
+    font-size: 21px;
+    font-family: 'Architects Daughter', cursive;
     font-weight: bold;
     text-align: center;
     color: #ad9689;
@@ -187,8 +196,7 @@ footer {
 
 h2.cikkcim {
     display: table;
-    font-size: 2em;
-    font-family: 'Marck Script', cursive;
+    font-family: 'Architects Daughter', cursive;
     color: #ad9689;
     margin: auto;
     margin-bottom: 10px;
@@ -197,8 +205,7 @@ h2.cikkcim {
 h3.cikkcim {
     display: table;
     text-align: left;
-    font-size: 1.5em;
-    font-family: 'Marck Script', cursive;
+    font-family: 'Architects Daughter', cursive;
     color: #ad9689;
     margin-bottom: 10px;
 }
