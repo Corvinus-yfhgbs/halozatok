@@ -86,8 +86,8 @@ window.onload = function () {
     letöltés(sorszám);
     document.getElementById("vissza").onclick = vissza;
     document.getElementById("előre").onclick = előre;
-    document.getElementById("válasz1").onclick = ellenőrzés1;
-    document.getElementById("válasz2").onclick = ellenőrzés2;
-    document.getElementById("válasz3").onclick = ellenőrzés3;
+    document.getElementById("válasz1").onclick = választás(1);
+    document.getElementById("válasz2").onclick = választás(2);
+    document.getElementById("válasz3").onclick = választás(3);
 }
 

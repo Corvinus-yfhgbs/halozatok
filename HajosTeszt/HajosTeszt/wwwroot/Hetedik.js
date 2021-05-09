@@ -1,35 +1,71 @@
-﻿var Kérdés;
-var sorszám = 1;
-var kérdésszám;
+﻿var hotList = [];
+var QuestionsInhotList = 3;
+var displayedQuestion;
+var numberOfQuestions;
+var nextQuestion = 1;
+var timerHandler;
 
 
-function kérdésBetöltés(id) {
-    fetch(`/questions/${id}`)
+function init() {
+    for (let i = 0; i < QuestionsInhotList; i++) {
+        hotList[1] = (
+            question: {},
+            goodAnswers: 0
+        )
+    }
+
+    fetch(`/questions/count`)
+        .then(result => result.text())
+        .then(n => { numberOfQuestions = parseInt(n) })
+
+    if (localStorage.getItem("hotList")) {
+        hotList = JSON.parse(localStorage.getItem("hotList"));
+    }
+
+    if (localStorage.getItem("displayedQuestion")) {
+        displayedQuestion = parseInt(localStorage.getItem("displayedQuestion"));
+    }
+
+    if (localStorage.getItem("nextQuestion")) {
+        nextQuestion = parseInt(localStorage.getItem("nextQuestion"));
+    }
+
+    if (hotList.length > n) {
+        for (let i = 0; i < QuestionsInhotList; i++) {
+            kérdésBetöltés(nextQuestion, i);
+            nextQuestion++;
+        }
+    } else {
+        kérdésMegjelenítés();
+    }
+
+}
+
+function kérdésBetöltés(questionNumber, destination) {
+    fetch(`/questions/${questionNumber}`)
         .then(response => {
             if (!response.ok) {
-                console.error(`Hibás válasz: ${response.status}`)
+                console.error(`Hibás letöltés: ${response.status}`);
+                return null
             }
             else {
                 return response.json()
             }
         })
-        .then(data => kérdésMegjelenítés(data))
+        .then(q => {
+            hotList[destination].question = q;
+            hotList[destination].correctAnswer = 0;
+            console.log(`A ${questionNumber}, kérdés letöltésre került a hotlist ${destination}. helyére`);
+            if (displayedQuestion == undefined && destination == 0) {
+                displayedQuestion = 0;
+                kérdésMegjelenítés();
+            }
+        })
          
 }
 
-function kérdések() {
-    fetch(`/questions/all`)
-        .then(response => response.json())
-        .then(data => összeskérdés(data))
-}
-
-function összeskérdés(data) {
-    kérdésszám = Object.keys(data).length
-
-}
-
-function kérdésMegjelenítés(kérdés) {
-    Kérdés = kérdés;
+function kérdésMegjelenítés() {
+    let kérdés = hotList[displayedQuestion].question;
     document.getElementById("kérdés_szöveg").innerText = kérdés.questionText
     document.getElementById("válasz1").innerText = kérdés.answer1
     document.getElementById("válasz2").innerText = kérdés.answer2
@@ -40,69 +76,61 @@ function kérdésMegjelenítés(kérdés) {
     else {
         document.getElementById("kép1").src = "";
     }
+
+    for (var i = 0; i <= 3; i++) {
+        document.getElementById(`válasz`+i).style.backgroundColor = "#ffffffcf";
+    }
+
+    document.getElementById('válaszok').style.pointerEvents = "auto";
 }
 
 function előre() {
-    if ((kérdésszám) == sorszám) {
-        sorszám = 1;
-    } else {
-        sorszám += 1;
+    clearTimeout(timerHandler);
+    displayedQuestion++;
+    if (displayedQuestion == QuestionsInhotList) {
+        displayedQuestion = 0
     }
-    kérdésBetöltés(sorszám)
-    document.getElementById("válasz1").style.backgroundColor = "#ffffffcf";
-    document.getElementById("válasz2").style.backgroundColor = "#ffffffcf";
-    document.getElementById("válasz3").style.backgroundColor = "#ffffffcf";
+    kérdésMegjelenítés();
 }
 
 function vissza() {
-    if (sorszám == 1) {
-        sorszám = kérdésszám;
-    } else {
-        sorszám -= 1;
+    displayedQuestion--;
+    if (displayedQuestion == QuestionsInhotList) {
+        displayedQuestion = 3
     }
-
-    kérdésBetöltés(sorszám)
-    document.getElementById("válasz1").style.backgroundColor = "#ffffffcf";
-    document.getElementById("válasz2").style.backgroundColor = "#ffffffcf";
-    document.getElementById("válasz3").style.backgroundColor = "#ffffffcf";
+    kérdésMegjelenítés();
 }
 
-
-function ellenőrzés1() {
-    if (Kérdés.correctAnswer == 1) {
-        document.getElementById("válasz1").style.backgroundColor = "green";
+function választás(n) {
+    let kérdés = hotList[displayedQuestion].question;
+    if (n == kérdés.correctAnswer) {
+        document.getElementById(`válasz` + n).style.backgroundColor = "green";
+        hotList[displayedQuestion].goodAnswers++;
+        if (hotList[displayedQuestion].goodAnswers==3) {
+            kérdésBetöltés(nextQuestion, displayedQuestion);
+            nextQuestion++;
+        }
     } else {
-        document.getElementById("válasz1").style.backgroundColor = "red";
-    }
-}
-
-function ellenőrzés2() {
-    if (Kérdés.correctAnswer == 2) {
-        document.getElementById("válasz2").style.backgroundColor = "green";
-    } else {
-        document.getElementById("válasz2").style.backgroundColor = "red";
-    }
-
-}
-
-
-function ellenőrzés3() {
-    if (Kérdés.correctAnswer == 3) {
-        document.getElementById("válasz3").style.backgroundColor = "green";
-    } else {
-        document.getElementById("válasz3").style.backgroundColor = "red";
+        document.getElementById(`válasz` + n).style.backgroundColor = "red";
+        document.getElementById(`válasz` + kérdés.correctAnswer).style.backgroundColor = "red";
+        hotList[displayedQuestion].goodAnswers = 0;
     }
 
+    document.getElementById('válaszok').style.pointerEvents = "none";
+    timerHandler = setTimeout(előre, 3000);
+
+    localStorage.setItem("hotList", JSON.stringify(hotList));
+    localStorage.setItem("displayedQuestion", displayedQuestion);
+    localStorage.setItem("nextQuestion", nextQuestion);
 }
 
 
 window.onload = function () {
-    kérdésBetöltés(sorszám);
-    kérdések();
+    init();
     document.getElementById("vissza").onclick = vissza;
     document.getElementById("előre").onclick = előre;
-    document.getElementById("válasz1").onclick = ellenőrzés1;
-    document.getElementById("válasz2").onclick = ellenőrzés2;
-    document.getElementById("válasz3").onclick = ellenőrzés3;
+    document.getElementById("válasz1").onclick = választás(1);
+    document.getElementById("válasz2").onclick = választás(2);
+    document.getElementById("válasz3").onclick = választás(3);
 }
 
